@@ -1,17 +1,17 @@
 body {
     font-family: 'Courier New', Courier, monospace;
     background-color: #f3f3f3;
-    background-image: url("./asset/sky-during-different.webp");
+    background-image: url("./asset/como-sera-o-clima-de-setembro-chuvas-se-espalharao-pelo-brasil-1662042338165_1280.webp");
     background-repeat: no-repeat;
     background-size: cover;
   }
   
   .contenedor {
     max-width: 500px;
-    margin: 150px auto;
+    margin: 50px auto;
     padding: 20px;
     text-align: center;
-    background-color: #1c3bc5;
+    background-color: #4b6bf7;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
   }
@@ -23,7 +23,7 @@ body {
   input[type="text"] {
     padding: 10px;
     font-size: 16px;
-    width: 70%;
+    width: 70%;   
   }
   
   button {
@@ -38,5 +38,6 @@ body {
   #datosClima {
     margin-top: 20px;
     font-size: 18px;
+    color: #ffffff;
   }
   

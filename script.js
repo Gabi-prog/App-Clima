@@ -6,6 +6,7 @@ const urlBase = configuracion.url;
 const llave = configuracion.apiKey;
 //conversion de grados Kelvin a Centigrados
 const difKelvin = 273.15;
+let idioma = 'sp';
 
 
 document.getElementById('botonBusqueda').addEventListener('click',() => {
@@ -16,7 +17,7 @@ document.getElementById('botonBusqueda').addEventListener('click',() => {
 })
 
 function fetchDatosClima(ciudad){
-    fetch(`${urlBase}?q=${ciudad}&appid=${llave}`)
+    fetch(`${urlBase}?q=${ciudad}&appid=${llave}&lang=${idioma}`)
     .then(response => response.json())
     .then(response => mostrarDatosClima(response))
 

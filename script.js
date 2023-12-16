@@ -2,7 +2,7 @@ import {configuracion} from './config.js';
 
 
 // Acceso a las configuraciones
-const urlBase = configuracion.url;
+const  direccion = configuracion.urlBase;
 const llave = configuracion.apiKey;
 //conversion de grados Kelvin a Centigrados
 const difKelvin = 273.15;
@@ -17,7 +17,7 @@ document.getElementById('botonBusqueda').addEventListener('click',() => {
 })
 
 function fetchDatosClima(ciudad){
-    fetch(`${urlBase}?q=${ciudad}&appid=${llave}&lang=${idioma}`)
+    fetch(`${direccion}?q=${ciudad}&appid=${llave}&lang=${idioma}`)
     .then(response => response.json())
     .then(response => mostrarDatosClima(response))
 

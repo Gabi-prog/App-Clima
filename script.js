@@ -1,7 +1,8 @@
 
 
 const urlBase ='https://api.openweathermap.org/data/2.5/weather';
-const apiKey = process.env.API_KEY;
+const apiKey = '1aad2dd578424d7390389357535e72d9';
+
 
 //conversion de grados Kelvin a Centigrados
 const difKelvin = 273.15;

@@ -1,13 +1,11 @@
-import {configuracion} from './config.js';
 
 
-// Acceso a las configuraciones
-const  direccion = configuracion.urlBase;
-const llave = configuracion.apiKey;
+const urlBase ='https://api.openweathermap.org/data/2.5/weather';
+
 //conversion de grados Kelvin a Centigrados
 const difKelvin = 273.15;
-let idioma = 'sp';
 
+let idioma = 'sp';
 
 document.getElementById('botonBusqueda').addEventListener('click',() => {
     const ciudad = document.getElementById('ciudadEntrada').value
@@ -17,7 +15,7 @@ document.getElementById('botonBusqueda').addEventListener('click',() => {
 })
 
 function fetchDatosClima(ciudad){
-    fetch(`${direccion}?q=${ciudad}&appid=${llave}&lang=${idioma}`)
+    fetch(`${urlBase}?q=${ciudad}&appid=${API_KEY}&lang=${idioma}`)
     .then(response => response.json())
     .then(response => mostrarDatosClima(response))
 
